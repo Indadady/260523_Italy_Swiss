@@ -12,24 +12,18 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[투어메이커] 스위스/이탈리아 2국 9일 (NO쇼핑/융프라우) - 스마트 가이드</title>
+    <title>[투어메이커] 스위스/이탈리아 2국 9일 - 출발 확정 가이드</title>
     
-    <!-- 🚨 SEO & Open Graph (카톡 공유 최적화) -->
-    <link rel="canonical" href="https://tourmaker.kr/swiss-italy-9days.html">
-    <meta name="description" content="2026.05.23 출발 | NO쇼핑 | 융프라우 & 골든패스 & 콜로세움 내부관람 포함 - 투어메이커 스마트 가이드">
+    <!-- 🚨 SEO & Open Graph -->
+    <link rel="canonical" href="https://tourmaker.kr/swiss-italy-confirmed.html">
+    <meta name="description" content="설레는 여행의 시작! 스위스/이탈리아 2국 9일 출발 확정 안내 및 상세 가이드입니다.">
     <meta name="theme-color" content="#dc2626">
 
-    <meta property="og:title" content="🇨🇭🇮🇹 스위스/이탈리아 2국 9일 : 알프스와 로마의 만남">
-    <meta property="og:description" content="NO쇼핑 | 융프라우요흐 등정 & 골든패스 열차 & 콜로세움 내부 입장">
+    <meta property="og:title" content="[출발확정] 🇨🇭🇮🇹 스위스/이탈리아 9일 가이드북">
+    <meta property="og:description" content="항공권, 호텔, 날씨, 준비물 체크리스트를 확인하세요.">
     <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/5a028c7bbce1766d207a8a6f/1618222885588-T9GGJQJE3JAXZBLSNX4A/robin-ulrich-bvSLu1Lew3Y-unsplash.jpg">
     <meta property="og:url" content="http://tourmaker.kr">
     <meta property="og:type" content="website">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="🇨🇭🇮🇹 스위스/이탈리아 2국 9일">
-    <meta name="twitter:description" content="NO쇼핑 | 융프라우요흐 등정 & 골든패스 열차 & 콜로세움 내부 입장">
-    <meta name="twitter:image" content="https://images.squarespace-cdn.com/content/v1/5a028c7bbce1766d207a8a6f/1618222885588-T9GGJQJE3JAXZBLSNX4A/robin-ulrich-bvSLu1Lew3Y-unsplash.jpg">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -50,9 +44,9 @@
             color: #1e293b; 
         }
         
-        /* Hero Background - Updated to Swiss Representative Image */
+        /* Hero Background */
         .hero-bg-swiss { 
-            background: linear-gradient(rgba(15, 23, 42, 0.3), rgba(15, 23, 42, 0.5)), url('https://images.squarespace-cdn.com/content/v1/5a028c7bbce1766d207a8a6f/1618222885588-T9GGJQJE3JAXZBLSNX4A/robin-ulrich-bvSLu1Lew3Y-unsplash.jpg');
+            background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.6)), url('https://images.squarespace-cdn.com/content/v1/5a028c7bbce1766d207a8a6f/1618222885588-T9GGJQJE3JAXZBLSNX4A/robin-ulrich-bvSLu1Lew3Y-unsplash.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -63,24 +57,26 @@
         }
         
         /* Map Custom Styles */
-        #map { height: 500px; width: 100%; border-radius: 1rem; z-index: 10; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        #map { height: 550px; width: 100%; border-radius: 1rem; z-index: 10; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
         
         /* Marker Icons */
         .custom-div-icon { background: transparent; border: none; }
         .number-icon {
-            background-color: #dc2626; /* Swiss Red */
-            color: white;
-            border: 2px solid white;
+            background-color: #fff;
+            color: #333;
+            border: 2px solid #666;
             border-radius: 50%;
             text-align: center;
             line-height: 24px;
             font-weight: bold;
             font-size: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
             display: flex; align-items: center; justify-content: center;
         }
-        .start-icon { background-color: #16a34a !important; transform: scale(1.2); }
-        .end-icon { background-color: #1e40af !important; transform: scale(1.2); }
+        .start-icon { background-color: #16a34a !important; color: white !important; border: none !important; transform: scale(1.2); }
+        .end-icon { background-color: #1e40af !important; color: white !important; border: none !important; transform: scale(1.2); }
+        .swiss-icon { border-color: #2563eb !important; color: #2563eb !important; }
+        .italy-icon { border-color: #dc2626 !important; color: #dc2626 !important; }
 
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
@@ -97,7 +93,7 @@
     <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300">
         <nav class="container mx-auto px-4">
             <div class="flex items-center justify-between h-16">
-                <!-- Logo Updated -->
+                <!-- Logo -->
                 <div class="flex items-center gap-2">
                     <a href="http://tourmaker.kr" target="_blank" class="p-1">
                         <img src="https://blogger.googleusercontent.com/img/a/AVvXsEitI-Z-hD82keOJ1AqHw-VTZjpw2U-O5UjtV9h3zblyG0wjsVfBWe9X9o0Q_Spctrt7krkd9qXO0xKTmGJLw4gyMZrRqpshKMFttnyx6OcC8-IGz3XLUZpGQOnRqVdol8jz5HuoDLqsEifnVRhcjUJHm13Sz8JrX9aPswMNUwZPvGtJEnQjhc2PiXlo-B8" alt="Tourmaker" class="h-8 md:h-10 w-auto">
@@ -107,11 +103,11 @@
                 
                 <!-- Desktop Nav -->
                 <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
-                    <a href="#home" class="hover:text-red-600 transition">홈</a>
                     <a href="#flight" class="hover:text-red-600 transition">항공/미팅</a>
-                    <a href="#map-section" class="hover:text-red-600 transition">여행지도</a>
+                    <a href="#map-section" class="hover:text-red-600 transition">지도/날씨</a>
+                    <a href="#culture" class="hover:text-red-600 transition">여행정보</a>
                     <a href="#timeline" class="hover:text-red-600 transition">상세일정</a>
-                    <a href="#check" class="hover:text-red-600 transition">체크리스트</a>
+                    <a href="#inclusions" class="hover:text-red-600 transition">포함/불포함</a>
                 </div>
 
                 <!-- Share -->
@@ -124,7 +120,7 @@
 
     <main>
         <!-- 1. Hero Section -->
-        <section id="home" class="hero-bg-swiss min-h-[80vh] flex items-center justify-center text-center px-4 relative">
+        <section id="home" class="hero-bg-swiss min-h-[75vh] flex items-center justify-center text-center px-4 relative">
             <div class="z-10 text-white max-w-5xl w-full animate-fade-in-up flex flex-col items-center">
                 
                 <div class="flex flex-col items-center gap-2 mb-6">
@@ -140,21 +136,13 @@
                 </h1>
 
                 <p class="text-base md:text-lg text-slate-200 mb-8 font-light tracking-wide max-w-2xl leading-relaxed">
-                    융프라우요흐 등정부터 콜로세움 내부 관람까지<br>
-                    꽉 찬 일정으로 떠나는 2개국 핵심 일주
+                    여행 준비는 저희에게 맡기시고,<br>
+                    설레는 마음만 챙겨오세요.
                 </p>
 
-                <!-- Key Selling Points -->
-                <div class="flex flex-wrap justify-center gap-3 w-full max-w-3xl mb-10">
-                    <span class="px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs md:text-sm border border-white/20">🏔️ 융프라우 등정</span>
-                    <span class="px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs md:text-sm border border-white/20">🚂 골든패스 열차</span>
-                    <span class="px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs md:text-sm border border-white/20">🏛️ 콜로세움 내부</span>
-                    <span class="px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-xs md:text-sm border border-white/20">🛍️ NO 쇼핑</span>
-                </div>
-
-                 <div class="animate-bounce">
+                 <div class="animate-bounce mt-4">
                     <a href="#flight" class="text-white/80 hover:text-white transition-colors flex flex-col items-center gap-1">
-                        <span class="text-xs">여행 시작하기</span>
+                        <span class="text-xs">일정 시작하기</span>
                         <i class="fa-solid fa-chevron-down text-2xl"></i>
                     </a>
                 </div>
@@ -166,34 +154,29 @@
             <div class="container mx-auto px-4">
                 <div class="text-center mb-8">
                     <h2 class="text-2xl font-bold text-slate-800">항공 스케줄 및 미팅 안내</h2>
-                    <p class="text-sm text-slate-500 mt-1">티웨이항공(TW) 유럽 직항편을 이용합니다.</p>
+                    <p class="text-sm text-slate-500 mt-1">전자항공권(E-ticket)은 출발 3일 전 개별 전송됩니다.</p>
                 </div>
                 
                 <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg border border-slate-200 p-6 md:p-8">
-                    <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8 border-b border-slate-100 pb-6">
-                        <div class="flex items-center gap-4">
-                            <!-- Logo: T'way -->
-                            <div class="p-1 bg-red-600 rounded">
-                                <span class="text-white font-black text-lg px-2 italic">t'way</span>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-lg text-slate-800">티웨이항공 (TW)</h3>
-                                <p class="text-sm text-slate-500">인천 ↔ 로마 직항 (A330-200)</p>
-                            </div>
+                    <div class="flex items-center gap-4 mb-8 border-b border-slate-100 pb-6">
+                        <div class="p-1 bg-red-600 rounded">
+                            <span class="text-white font-black text-lg px-2 italic">t'way</span>
                         </div>
-                        <div class="text-right">
-                            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">출발확정</span>
+                        <div>
+                            <h3 class="font-bold text-lg text-slate-800">티웨이항공 (TW)</h3>
+                            <p class="text-sm text-slate-500">인천 ↔ 로마 직항 (A330-200)</p>
                         </div>
                     </div>
 
                     <div class="space-y-6">
-                        <!-- Departure -->
-                        <div class="flex items-center justify-between bg-slate-50 p-4 rounded-lg border border-slate-100 shadow-sm">
-                            <div class="text-center w-1/4">
+                        <!-- Departure: Incheon -> Rome -->
+                        <div class="flex items-center justify-between bg-slate-50 p-4 rounded-lg border border-slate-100 shadow-sm relative overflow-hidden">
+                            <div class="absolute top-0 left-0 bg-blue-600 text-white text-[10px] px-2 py-0.5 rounded-br-lg font-bold">출국</div>
+                            <div class="text-center w-1/4 pt-2">
                                 <span class="block text-xl font-bold text-slate-800">12:35</span>
                                 <span class="text-xs text-slate-500">5/23 (토) 인천</span>
                             </div>
-                            <div class="flex-grow text-center px-4">
+                            <div class="flex-grow text-center px-4 pt-2">
                                 <div class="relative flex items-center justify-center">
                                     <div class="h-[2px] w-full bg-slate-300 absolute"></div>
                                     <i class="fa-solid fa-plane text-red-500 bg-white px-2 relative z-10"></i>
@@ -201,41 +184,41 @@
                                 <span class="text-xs text-slate-400 mt-1 block">약 13시간 40분</span>
                                 <span class="text-[10px] text-slate-400 block">TW405</span>
                             </div>
-                            <div class="text-center w-1/4">
+                            <div class="text-center w-1/4 pt-2">
                                 <span class="block text-xl font-bold text-slate-800">19:15</span>
                                 <span class="text-xs text-slate-500">5/23 (토) 로마</span>
                             </div>
                         </div>
 
-                        <!-- Arrival -->
-                        <div class="flex items-center justify-between bg-slate-50 p-4 rounded-lg border border-slate-100 shadow-sm">
-                            <div class="text-center w-1/4">
+                        <!-- Return: Rome -> Incheon -->
+                        <div class="flex items-center justify-between bg-slate-50 p-4 rounded-lg border border-slate-100 shadow-sm relative overflow-hidden">
+                             <div class="absolute top-0 left-0 bg-red-600 text-white text-[10px] px-2 py-0.5 rounded-br-lg font-bold">귀국</div>
+                            <div class="text-center w-1/4 pt-2">
                                 <span class="block text-xl font-bold text-slate-800">21:15</span>
                                 <span class="text-xs text-slate-500">5/30 (토) 로마</span>
                             </div>
-                            <div class="flex-grow text-center px-4">
+                            <div class="flex-grow text-center px-4 pt-2">
                                 <div class="relative flex items-center justify-center">
                                     <div class="h-[2px] w-full bg-slate-300 absolute"></div>
-                                    <i class="fa-solid fa-plane text-red-500 bg-white px-2 relative z-10 transform rotate-180"></i>
+                                    <i class="fa-solid fa-plane text-blue-600 bg-white px-2 relative z-10"></i>
                                 </div>
                                 <span class="text-xs text-slate-400 mt-1 block">약 11시간 55분</span>
                                 <span class="text-[10px] text-slate-400 block">TW406</span>
                             </div>
-                            <div class="text-center w-1/4">
+                            <div class="text-center w-1/4 pt-2">
                                 <span class="block text-xl font-bold text-slate-800">16:10</span>
                                 <span class="text-xs text-slate-500">5/31 (일) 인천</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="mt-6 bg-yellow-50 p-4 rounded-lg border border-yellow-200 flex items-start gap-3">
-                        <i class="fa-solid fa-bullhorn text-yellow-600 mt-1 text-lg"></i>
+                    <div class="mt-6 bg-emerald-50 p-4 rounded-lg border border-emerald-200 flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot text-emerald-600 mt-1 text-lg"></i>
                         <div>
-                            <p class="text-sm font-bold text-slate-800">공항 미팅 장소 안내</p>
+                            <p class="text-sm font-bold text-slate-800">공항 미팅 장소</p>
                             <p class="text-xs text-slate-600 mt-1">
                                 인천국제공항 <strong>제1여객터미널</strong> 3층 출국장 1번 출구 앞<br>
-                                "모두투어" 1~4번 테이블<br>
-                                ※ 정확한 미팅 시간은 출발 2-3일 전 확정 안내드립니다.
+                                "모두투어" 1~4번 테이블 (여권 필수 지참)
                             </p>
                         </div>
                     </div>
@@ -243,13 +226,13 @@
             </div>
         </section>
 
-        <!-- 3. Interactive Map (Lazy Loaded) -->
+        <!-- 3. Interactive Map & Practical Info -->
         <section id="map-section" class="py-16 bg-slate-50">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-8">
                     <span class="text-red-600 font-bold tracking-wider uppercase text-sm">TRAVEL ROUTE</span>
                     <h2 class="text-3xl font-bold mt-2 text-slate-800">한눈에 보는 여행 동선</h2>
-                    <p class="text-slate-500 mt-2 text-sm">로마에서 시작해 스위스 알프스를 돌아오는 알찬 여정</p>
+                    <p class="text-slate-500 mt-2 text-sm">로마 IN → 이탈리아/스위스 일주 → 로마 OUT</p>
                 </div>
 
                 <div class="max-w-5xl mx-auto bg-white p-4 rounded-2xl shadow-xl border border-slate-200">
@@ -260,34 +243,132 @@
                     
                     <!-- Map Legend -->
                     <div class="mt-4 flex flex-wrap justify-center gap-4 text-xs font-medium text-slate-600">
-                        <div class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-green-600 border border-white shadow-sm"></span>출발(로마)</div>
-                        <div class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-red-600 border border-white shadow-sm"></span>주요방문지</div>
-                        <div class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-blue-800 border border-white shadow-sm"></span>도착(로마)</div>
+                        <div class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-[#16a34a] text-white flex items-center justify-center text-[8px]">IN</span>로마 도착(좌)</div>
+                        <div class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-[#dc2626]"></span>이탈리아 투어</div>
+                        <div class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-[#2563eb]"></span>스위스 투어</div>
+                        <div class="flex items-center gap-1"><span class="w-3 h-3 rounded-full bg-[#1e40af] text-white flex items-center justify-center text-[8px]">OUT</span>로마 출발(우)</div>
                     </div>
 
-                    <!-- ⛅️ Weather & 💶 Exchange Rate Info -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 border-t border-slate-100 pt-6">
-                        <!-- Weather -->
-                        <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100 flex items-center gap-4 hover:shadow-md transition duration-300">
-                            <div class="bg-white p-3 rounded-full shadow-sm">
-                                <i class="fa-solid fa-temperature-half text-blue-500 text-2xl"></i>
+                    <!-- 3-Column Info -->
+                    <div class="mt-8 border-t border-slate-100 pt-6">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            
+                            <!-- 1. Weather Info -->
+                            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                                <h5 class="font-bold text-slate-800 mb-2 flex items-center gap-2"><i class="fa-solid fa-shirt text-blue-500"></i>날씨 & 옷차림</h5>
+                                <div class="space-y-2 text-sm">
+                                    <div>
+                                        <p class="font-bold text-xs text-red-500">🇮🇹 이탈리아 (20~26℃)</p>
+                                        <p class="text-xs text-slate-500">반팔 + 얇은 긴팔 (일교차 대비)</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-xs text-blue-500">🇨🇭 스위스 (-5~10℃)</p>
+                                        <p class="text-xs text-slate-500"><strong>경량패딩, 바람막이</strong>, 비니 필수</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <h4 class="font-bold text-slate-800 text-sm">5월 날씨 정보</h4>
-                                <p class="text-xs text-slate-500 mt-0.5">이탈리아: 초여름 / 스위스: 봄~쌀쌀</p>
-                                <p class="text-[11px] text-red-500 mt-1 font-medium">※ 융프라우 등정 시 겨울 외투 필수</p>
+
+                            <!-- 2. Currency Info (Real-time Link) -->
+                            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                                <h5 class="font-bold text-slate-800 mb-2 flex items-center gap-2"><i class="fa-solid fa-chart-line text-red-500"></i>실시간 환율 확인</h5>
+                                <div class="space-y-3">
+                                    <a href="https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_EURKRW" target="_blank" class="block w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs py-2 rounded transition">
+                                        💶 유로 (EUR) 환율 보기
+                                    </a>
+                                    <a href="https://finance.naver.com/marketindex/exchangeDetail.naver?marketindexCd=FX_CHFKRW" target="_blank" class="block w-full text-center bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs py-2 rounded transition">
+                                        🇨🇭 스위스 프랑 (CHF) 환율 보기
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- 3. Adapter Info -->
+                            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                                <h5 class="font-bold text-slate-800 mb-2 flex items-center gap-2"><i class="fa-solid fa-plug text-green-500"></i>전압 & 어댑터</h5>
+                                <div class="space-y-2 text-sm">
+                                    <p class="text-xs text-slate-600 leading-snug">
+                                        이탈리아와 스위스는 한국과 플러그 모양이 다를 수 있습니다.
+                                    </p>
+                                    <p class="text-xs font-bold text-slate-800 mt-1">
+                                        ✅ 멀티어댑터 필수 지참
+                                    </p>
+                                    <p class="text-[10px] text-slate-400">
+                                        (호텔마다 상이하므로 멀티형 추천)
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Culture & History Info -->
+        <section id="culture" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-10">
+                    <span class="text-emerald-600 font-bold tracking-wider uppercase text-sm">TRAVEL KNOWLEDGE</span>
+                    <h2 class="text-2xl font-bold mt-2 text-slate-800">알고 가면 더 재미있는 인문학 여행</h2>
+                    <p class="text-sm text-slate-500 mt-1">여행지가 더 특별하게 다가오는 역사와 문화 이야기</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Italy Card -->
+                    <div class="bg-red-50/50 rounded-2xl p-6 border border-red-100 hover:shadow-lg transition duration-300">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-white p-3 rounded-full shadow-sm text-red-600">
+                                <i class="fa-solid fa-landmark text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-800">🇮🇹 거대한 박물관, 이탈리아</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded-xl shadow-sm">
+                                <h4 class="font-bold text-slate-800 text-sm mb-1">🏛️ 로마 제국의 유산</h4>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    로마는 '영원의 도시'라 불립니다. 콜로세움과 포로 로마노는 2천 년 전 세계를 호령하던 로마 제국의 심장이었습니다. 발 닿는 곳마다 유적인 이곳에서 고대의 숨결을 느껴보세요.
+                                </p>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-sm">
+                                <h4 class="font-bold text-slate-800 text-sm mb-1">🎨 피렌체와 르네상스</h4>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    중세의 암흑기를 끝내고 인간 중심의 문화를 꽃피운 르네상스의 발상지입니다. 메디치 가문의 후원으로 미켈란젤로, 레오나르도 다빈치 같은 천재들이 활약했던 예술의 도시입니다.
+                                </p>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-red-400">
+                                <h4 class="font-bold text-slate-800 text-sm mb-1">☕️ 여행 꿀팁: 커피 문화</h4>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    이탈리아에서 '카페(Caffe)'는 에스프레소를 뜻합니다. 현지인처럼 '바(Bar)'에 서서 에스프레소를 한 입에 털어 넣는 경험을 해보세요. (자리에 앉으면 자리세가 붙어요!)
+                                </p>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Exchange Rate -->
-                        <div class="bg-yellow-50/50 p-4 rounded-xl border border-yellow-100 flex items-center gap-4 hover:shadow-md transition duration-300">
-                            <div class="bg-white p-3 rounded-full shadow-sm">
-                                <i class="fa-solid fa-coins text-yellow-500 text-2xl"></i>
+                    <!-- Swiss Card -->
+                    <div class="bg-blue-50/50 rounded-2xl p-6 border border-blue-100 hover:shadow-lg transition duration-300">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-white p-3 rounded-full shadow-sm text-blue-600">
+                                <i class="fa-solid fa-mountain text-2xl"></i>
                             </div>
-                            <div class="flex-grow">
-                                <h4 class="font-bold text-slate-800 text-sm">환전 정보</h4>
-                                <p class="text-xs text-slate-500 mt-0.5">유로(EUR) 및 스위스 프랑(CHF)</p>
-                                <span class="text-[10px] text-slate-400">대부분 유로/카드 사용 가능</span>
+                            <h3 class="text-xl font-bold text-slate-800">🇨🇭 신뢰와 대자연, 스위스</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded-xl shadow-sm">
+                                <h4 class="font-bold text-slate-800 text-sm mb-1">🏔️ 알프스의 여왕, 융프라우</h4>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    '젊은 처녀'라는 뜻의 융프라우(Jungfrau)는 알프스 산맥의 고봉입니다. 유럽의 지붕이라 불리는 융프라우요흐 역(3,454m)까지 산악열차를 타고 올라가는 기술력에 감탄하게 됩니다.
+                                </p>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-sm">
+                                <h4 class="font-bold text-slate-800 text-sm mb-1">🕊️ 영세 중립국과 평화</h4>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    강대국 사이에서 생존하기 위해 무장 중립을 택했던 나라입니다. 현재는 적십자 본부 등 수많은 국제기구가 위치한 평화의 상징이자, 4개 국어(독일어,프랑스어,이탈리아어,로만슈어)를 쓰는 다양성의 국가입니다.
+                                </p>
+                            </div>
+                            <div class="bg-white p-4 rounded-xl shadow-sm border-l-4 border-blue-400">
+                                <h4 class="font-bold text-slate-800 text-sm mb-1">🚂 여행 꿀팁: 칼 같은 시간</h4>
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    스위스 기차는 전 세계에서 가장 정확하기로 유명합니다. '스위스 시계'의 명성이 그냥 생긴 게 아니죠. 기차 시간에 1분이라도 늦으면 가차 없이 떠나니 시간 엄수는 필수입니다!
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -295,12 +376,11 @@
             </div>
         </section>
 
-        <!-- 4. Itinerary Timeline -->
-        <section id="timeline" class="py-16 bg-white">
+        <!-- 5. Itinerary Timeline -->
+        <section id="timeline" class="py-16 bg-slate-50">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-8">
                     <h2 class="text-2xl font-bold text-slate-800">일자별 간략 일정</h2>
-                    <p class="text-sm text-slate-500 mt-1">스위스와 이탈리아의 하이라이트를 확인하세요.</p>
                 </div>
 
                 <!-- Tabs -->
@@ -316,7 +396,7 @@
                     <button class="tab-btn shrink-0 px-5 py-2 rounded-full border border-slate-200 bg-white text-slate-500 font-bold text-sm transition" onclick="openTab(event, 'day9')">9일차</button>
                 </div>
 
-                <div class="max-w-4xl mx-auto bg-slate-50 p-6 md:p-8 rounded-2xl shadow-inner border border-slate-200 min-h-[320px]">
+                <div class="max-w-4xl mx-auto bg-white p-6 md:p-8 rounded-2xl shadow-inner border border-slate-200 min-h-[320px]">
                     <!-- Day 1 -->
                     <div id="day1" class="tab-content animate-fade-in-up">
                         <div class="flex items-center gap-2 mb-4 border-b pb-2 border-slate-200">
@@ -431,46 +511,98 @@
                     </div>
                 </div>
 
-                <!-- Link & Disclaimer -->
-                <div class="max-w-3xl mx-auto mt-8">
-                    <!-- 1. Link Button -->
-                    <div class="text-center mb-6">
-                        <p class="text-xs text-slate-500 mb-3">더 자세한 일정과 포함사항이 궁금하신가요?</p>
-                        <a href="https://www.modetour.com/package/103140399" target="_blank" class="inline-flex items-center justify-center bg-white border border-slate-300 text-slate-700 font-bold py-3 px-6 rounded-full shadow-sm hover:bg-slate-50 hover:border-red-500 hover:text-red-600 transition group">
-                            <span class="mr-2">모두투어 원문 일정표 전체보기</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-xs group-hover:translate-x-1 transition"></i>
-                        </a>
-                        <p class="text-[10px] text-slate-400 mt-2">상품코드: EWP321TWU9</p>
-                    </div>
+                <!-- Link only -->
+                <div class="max-w-3xl mx-auto mt-8 text-center">
+                    <a href="https://www.modetour.com/package/103140399" target="_blank" class="inline-flex items-center justify-center bg-white border border-slate-300 text-slate-700 font-bold py-3 px-6 rounded-full shadow-sm hover:bg-slate-50 hover:border-red-500 hover:text-red-600 transition group">
+                        <span class="mr-2">모두투어 원문 일정표 전체보기</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs group-hover:translate-x-1 transition"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-                    <!-- 2. Disclaimer Box -->
-                    <div class="bg-red-50 border border-red-200 rounded-xl p-6 text-sm text-slate-700">
-                        <h4 class="font-bold text-red-700 mb-3 flex items-center"><i class="fa-solid fa-circle-exclamation mr-2"></i>예약 유의사항 (필독)</h4>
-                        <ul class="list-disc pl-5 space-y-2 leading-relaxed">
-                            <li>현재 기준 <strong>출발 확정</strong> 상품입니다. (예약인원 10명 / 최소출발 15명 / 공동행사 포함 총 14명 예정)</li>
-                            <li>상품 가격은 실시간 항공/호텔 사정에 따라 변동될 수 있습니다.</li>
-                            <li><strong>쇼핑센터 방문이 없는(NO쇼핑)</strong> 깔끔한 일정입니다.</li>
-                            <li>1인 객실 사용 시 추가 요금(550,000원)이 발생합니다.</li>
+        <!-- 6. Included/Excluded (NEW) -->
+        <section id="inclusions" class="py-16 bg-white border-t border-slate-100">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl font-bold text-slate-800">포함 / 불포함 사항</h2>
+                    <p class="text-sm text-slate-500 mt-1">여행 경비에 포함된 내역과 현지에서 지불해야 할 내역을 확인하세요.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Included -->
+                    <div class="bg-blue-50/50 rounded-2xl p-8 border border-blue-100">
+                        <h3 class="font-bold text-xl text-blue-800 mb-6 flex items-center">
+                            <i class="fa-solid fa-circle-check mr-2"></i>포함 사항
+                        </h3>
+                        <ul class="space-y-3 text-sm text-slate-700">
+                            <li class="flex items-start"><i class="fa-solid fa-check text-blue-500 mt-1 mr-2 text-xs"></i>국제선 왕복 항공료</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-blue-500 mt-1 mr-2 text-xs"></i>유류할증료(매월변동), 인천공항세, 제세금 포함</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-blue-500 mt-1 mr-2 text-xs"></i>전 일정 호텔 숙박비</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-blue-500 mt-1 mr-2 text-xs"></i>일정표 내 전일 차량, 식사, 관광지 입장료</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-blue-500 mt-1 mr-2 text-xs"></i>관광객들에게 징수되는 호텔 TAX</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-blue-500 mt-1 mr-2 text-xs"></i>최대 1억원 여행자 보험</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-blue-500 mt-1 mr-2 text-xs"></i>인솔자 동반</li>
+                            <li class="flex items-start"><i class="fa-solid fa-check text-blue-500 mt-1 mr-2 text-xs"></i>현지 가이드 (일부 일정에서만 가이드가 동행합니다.)</li>
+                        </ul>
+                    </div>
+                    <!-- Excluded -->
+                    <div class="bg-red-50/50 rounded-2xl p-8 border border-red-100">
+                        <h3 class="font-bold text-xl text-red-700 mb-6 flex items-center">
+                            <i class="fa-solid fa-circle-xmark mr-2"></i>불포함 사항
+                        </h3>
+                        <ul class="space-y-4 text-sm text-slate-700">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-coins text-red-500 mt-1 mr-2 text-xs"></i>
+                                <div>
+                                    <span class="font-bold text-red-600">가이드/기사 경비 (1인 90 EUR)</span>
+                                    <p class="text-xs text-slate-500 mt-1">현지에서 지불해야 합니다.<br><span class="text-red-500 font-bold">※ 단, 행사 인원이 14명 이하일 시 1인당 20 EUR 추가</span></p>
+                                </div>
+                            </li>
+                            <li class="flex items-start"><i class="fa-solid fa-xmark text-red-400 mt-1 mr-2 text-xs"></i>기타 개인 경비 (음료, 주류, 선택관광, 기념품 등)</li>
+                            <li class="flex items-start"><i class="fa-solid fa-xmark text-red-400 mt-1 mr-2 text-xs"></i>초과 수화물 요금 (규정 무게/개수 초과 시)</li>
+                            <li class="flex items-start"><i class="fa-solid fa-xmark text-red-400 mt-1 mr-2 text-xs"></i>1인 싱글 객실 사용 시 싱글차지</li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-hand-holding-dollar text-slate-400 mt-1 mr-2 text-xs"></i>
+                                <div>
+                                    <span>각종 매너팁 (테이블팁, 객실팁, 포터비 등)</span>
+                                    <p class="text-xs text-slate-400 mt-0.5">※ 매너팁은 자율적 선택사항입니다.</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 5. Promotional Video (Updated) -->
+        <!-- 7. Promotional Video (Updated with Italy) -->
         <section class="py-16 bg-slate-900">
             <div class="container mx-auto px-4">
-                <div class="text-center mb-8 text-white">
-                    <h2 class="text-2xl font-bold">🇨🇭 미리 보는 스위스 기차여행</h2>
-                    <p class="text-slate-400 text-sm mt-1">골든패스 라인과 융프라우의 절경을 감상하세요.</p>
+                <div class="text-center mb-10 text-white">
+                    <h2 class="text-2xl font-bold">🎬 미리 보는 여행의 감동</h2>
+                    <p class="text-slate-400 text-sm mt-2">알프스의 대자연과 로마의 낭만을 영상으로 먼저 만나보세요.</p>
                 </div>
-                <div class="max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden shadow-2xl border border-slate-700">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/Th04dG819fs" title="Grand Train Tour of Switzerland" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <!-- Swiss Video -->
+                    <div class="space-y-3">
+                        <div class="aspect-video rounded-xl overflow-hidden shadow-2xl border border-slate-700">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/Th04dG819fs" title="Grand Train Tour of Switzerland" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-center text-slate-300 font-bold text-sm">🇨🇭 스위스 기차여행</p>
+                    </div>
+
+                    <!-- Italy Video -->
+                    <div class="space-y-3">
+                        <div class="aspect-video rounded-xl overflow-hidden shadow-2xl border border-slate-700">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/XtYYO_regQY" title="Italy Travel Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-center text-slate-300 font-bold text-sm">🇮🇹 이탈리아 핵심 일주</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 6. Checklist & Memo -->
+        <!-- 8. Checklist & Memo -->
         <section id="check" class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-8">
@@ -488,9 +620,28 @@
                     <div class="bg-yellow-50 p-6 rounded-2xl border border-yellow-100 shadow-sm">
                         <h3 class="font-bold text-lg mb-4 text-yellow-800">📝 나만의 메모장</h3>
                         <textarea id="travel-memo" class="w-full h-64 bg-white p-4 rounded-lg border border-yellow-200 text-slate-700 resize-none focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="기념품 목록, 환전할 금액 등 잊으면 안 되는 내용을 적어두세요. (자동저장)"></textarea>
-                        <p class="text-[11px] text-slate-500 mt-2 leading-relaxed">
-                            * 메모는 현재 사용 중인 기기(브라우저)에만 자동 저장됩니다.
-                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Emergency Contacts -->
+        <section class="py-12 bg-slate-50 border-t border-slate-200">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-6">
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">🆘 위급상황 비상연락망</h3>
+                    <p class="text-slate-500 text-sm">캡처해서 저장해두시면 위급 시 도움이 됩니다.</p>
+                </div>
+                <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                        <h4 class="font-bold text-slate-800 mb-2">🇮🇹 주 이탈리아 대한민국 대사관</h4>
+                        <p class="text-sm text-slate-600">주간: +39-06-802461</p>
+                        <p class="text-sm text-red-600 font-bold">야간/휴일: +39-335-185-0499</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
+                        <h4 class="font-bold text-slate-800 mb-2">🇨🇭 주 스위스 대한민국 대사관</h4>
+                        <p class="text-sm text-slate-600">주간: +41-31-356-2444</p>
+                        <p class="text-sm text-red-600 font-bold">야간/휴일: +41-79-897-4086</p>
                     </div>
                 </div>
             </div>
@@ -521,10 +672,10 @@
                 &copy; 2026 Tourmaker Inc. All rights reserved.
             </p>
             
-            <!-- Tourmaker Link Box -->
+            <!-- Tourmaker Link Box (Standard Design) -->
             <div class="mt-8">
-                 <a href="http://tourmaker.kr" target="_blank" class="inline-block border border-slate-200 rounded-full px-4 py-2 bg-slate-50 text-slate-500 hover:text-red-600 hover:border-red-300 hover:bg-white transition text-xs">
-                    👉 <strong>투어메이커</strong> 홈페이지 바로가기
+                 <a href="http://tourmaker.kr" target="_blank" class="inline-block border border-slate-300 rounded-lg px-6 py-3 bg-white text-slate-600 font-bold hover:text-red-600 hover:border-red-400 hover:shadow-md transition text-sm">
+                    👉 <span class="text-slate-800">투어메이커</span> 홈페이지 바로가기
                 </a>
             </div>
         </div>
@@ -567,7 +718,6 @@
             const badge = document.getElementById('d-day-badge');
             if(!badge) return;
 
-            // 출발일: 2026-05-23
             const depart = new Date('2026-05-23T00:00:00');
             const now = new Date();
 
@@ -633,7 +783,7 @@
             });
         })();
 
-        // 6) Map Initialization (Lazy Load)
+        // 6) Map Initialization (Adjusted for IN-Left, OUT-Right Layout)
         let mapInited = false;
         function initMap(){
             if(mapInited) return;
@@ -642,27 +792,26 @@
             const el = document.getElementById('map');
             if(!el) return;
             
-            el.innerHTML = ''; // Clear loading
+            el.innerHTML = ''; 
 
             mapInited = true;
 
-            /* [Map Coordinate Adjustment Logic]
-               - 1(IN) and 9/11(OUT) are Rome. Shifted West/East to prevent overlap.
-               - 4(Visit) and 7(Transit) are Milan. Shifted West/East to prevent overlap.
+            /* [Map Logic Change] 
+               Rome IN shifted slightly WEST, Rome OUT shifted slightly EAST to create a U-shaped loop visualization
+               without over-distorting the map.
             */
-            const spots = [
-                { name:'로마(IN)', lat:41.9028, lng:12.3500, type:'start' }, // Shifted West
-                { name:'피렌체', lat:43.7696, lng:11.2558 },
-                { name:'베니스', lat:45.4408, lng:12.3155 },
-                { name:'밀라노', lat:45.4642, lng:9.0000 }, // Shifted West
-                { name:'루체른', lat:47.0502, lng:8.3093 },
-                { name:'인터라켄', lat:46.6863, lng:7.8632 },
-                { name:'밀라노(경유)', lat:45.4642, lng:9.3800 }, // Shifted East
-                { name:'피사', lat:43.7228, lng:10.4017 },
-                { name:'로마(복귀)', lat:41.9028, lng:12.6500 }, // Shifted East
-                { name:'폼페이/소렌토', lat:40.7512, lng:14.4874 },
-                { name:'로마(OUT)', lat:41.7000, lng:12.3000, type:'end' }, 
-            ];
+            const spots = {
+                rome_in: [41.9028, 12.2000], // Shifted slightly West (Real Rome ~12.5)
+                florence: [43.7696, 11.2558],
+                venice: [45.4408, 12.3155],
+                milan_it: [45.4642, 9.1900],
+                lucerne: [47.0502, 8.3093],
+                interlaken: [46.6863, 7.8632],
+                milan_trans: [45.4642, 9.1900], 
+                pisa: [43.7228, 10.4017],
+                pompeii: [40.7512, 14.4874],
+                rome_out: [41.7000, 12.8000] // Shifted slightly East
+            };
 
             const map = L.map('map', { scrollWheelZoom:false });
 
@@ -671,30 +820,61 @@
                 attribution: '&copy; OpenStreetMap'
             }).addTo(map);
 
-            const bounds = [];
+            // 1. Italy Start (Red)
+            const italyPath = [spots.rome_in, spots.florence, spots.venice, spots.milan_it];
+            L.polyline(italyPath, { weight:4, opacity:0.8, color:'#dc2626' }).addTo(map);
 
-            spots.forEach((s, i) => {
-                const num = i+1;
-                
-                const isStart = s.type === 'start';
-                const isEnd = s.type === 'end';
-                
+            // 2. Border UP (Dotted)
+            const borderUp = [spots.milan_it, spots.lucerne];
+            L.polyline(borderUp, { weight:4, opacity:0.6, color:'#64748b', dashArray: '10, 10' }).addTo(map);
+
+            // 3. Swiss (Blue)
+            const swissPath = [spots.lucerne, spots.interlaken];
+            L.polyline(swissPath, { weight:4, opacity:0.9, color:'#2563eb' }).addTo(map);
+
+            // 4. Border DOWN (Dotted)
+            const borderDown = [spots.interlaken, spots.milan_trans];
+            L.polyline(borderDown, { weight:4, opacity:0.6, color:'#64748b', dashArray: '10, 10' }).addTo(map);
+
+            // 5. Italy Return (Red)
+            const italyReturn = [spots.milan_trans, spots.pisa, spots.pompeii, spots.rome_out];
+             L.polyline(italyReturn, { weight:4, opacity:0.8, color:'#dc2626' }).addTo(map);
+
+
+            // Markers
+            const markerData = [
+                { name:'로마(IN)', lat:spots.rome_in[0], lng:spots.rome_in[1], type:'start' },
+                { name:'피렌체', lat:spots.florence[0], lng:spots.florence[1], type:'italy' },
+                { name:'베니스', lat:spots.venice[0], lng:spots.venice[1], type:'italy' },
+                { name:'밀라노', lat:spots.milan_it[0], lng:spots.milan_it[1], type:'italy' },
+                { name:'루체른', lat:spots.lucerne[0], lng:spots.lucerne[1], type:'swiss' },
+                { name:'인터라켄', lat:spots.interlaken[0], lng:spots.interlaken[1], type:'swiss' },
+                { name:'피사', lat:spots.pisa[0], lng:spots.pisa[1], type:'italy' },
+                { name:'폼페이', lat:spots.pompeii[0], lng:spots.pompeii[1], type:'italy' },
+                { name:'로마(OUT)', lat:spots.rome_out[0], lng:spots.rome_out[1], type:'end' },
+            ];
+
+            const bounds = [];
+            markerData.forEach((s, i) => {
+                let iconClass = 'number-icon';
+                if(s.type === 'start') iconClass += ' start-icon';
+                else if(s.type === 'end') iconClass += ' end-icon';
+                else if(s.type === 'swiss') iconClass += ' swiss-icon';
+                else iconClass += ' italy-icon';
+
                 const icon = L.divIcon({
                     className:'custom-div-icon',
-                    html:`<div class="number-icon ${isStart?'start-icon':''} ${isEnd?'end-icon':''}" style="width:28px;height:28px;">${num}</div>`,
+                    html:`<div class="${iconClass}" style="width:28px;height:28px;">${i+1}</div>`,
                     iconSize:[28,28],
                     iconAnchor:[14,14]
                 });
 
                 L.marker([s.lat, s.lng], { icon })
                     .addTo(map)
-                    .bindPopup(`<b>${num}. ${s.name}</b>`);
-
+                    .bindPopup(`<b>${i+1}. ${s.name}</b>`);
+                
                 bounds.push([s.lat, s.lng]);
             });
-
-            const poly = L.polyline(bounds, { weight:4, opacity:0.8, color:'#dc2626' });
-            poly.addTo(map);
 
             map.fitBounds(bounds, { padding:[30,30] });
         }
