@@ -253,17 +253,20 @@
                     <div class="mt-8 border-t border-slate-100 pt-6">
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                             
-                            <!-- 1. Weather Info -->
+                            <!-- 1. Weather Info (Detailed) -->
                             <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
                                 <h5 class="font-bold text-slate-800 mb-2 flex items-center gap-2"><i class="fa-solid fa-shirt text-blue-500"></i>날씨 & 옷차림</h5>
-                                <div class="space-y-2 text-sm">
+                                <div class="space-y-3 text-sm">
                                     <div>
                                         <p class="font-bold text-xs text-red-500">🇮🇹 이탈리아 (20~26℃)</p>
-                                        <p class="text-xs text-slate-500">반팔 + 얇은 긴팔 (일교차 대비)</p>
+                                        <p class="text-xs text-slate-500">초여름 날씨. 반팔 + 얇은 겉옷 (일교차 대비)</p>
                                     </div>
-                                    <div>
-                                        <p class="font-bold text-xs text-blue-500">🇨🇭 스위스 (-5~10℃)</p>
-                                        <p class="text-xs text-slate-500"><strong>경량패딩, 바람막이</strong>, 비니 필수</p>
+                                    <div class="bg-blue-50 p-2 rounded-lg">
+                                        <p class="font-bold text-xs text-blue-600 mb-1">🇨🇭 스위스 (도시 vs 고지)</p>
+                                        <ul class="text-xs text-slate-600 space-y-1">
+                                            <li>🏙️ <strong>도시</strong>(8~18℃): 일교차 큼</li>
+                                            <li>🏔️ <strong>융프라우</strong>(체감 0℃↓): <span class="text-red-500 font-bold">경량패딩, 바람막이</span> 필수</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -521,14 +524,14 @@
             </div>
         </section>
 
-        <!-- 6. Included/Excluded (NEW) -->
+        <!-- 6. Included/Excluded & Disclaimer -->
         <section id="inclusions" class="py-16 bg-white border-t border-slate-100">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-10">
                     <h2 class="text-2xl font-bold text-slate-800">포함 / 불포함 사항</h2>
                     <p class="text-sm text-slate-500 mt-1">여행 경비에 포함된 내역과 현지에서 지불해야 할 내역을 확인하세요.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-8">
                     <!-- Included -->
                     <div class="bg-blue-50/50 rounded-2xl p-8 border border-blue-100">
                         <h3 class="font-bold text-xl text-blue-800 mb-6 flex items-center">
@@ -570,6 +573,14 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+
+                <!-- Disclaimer Box (Requested Addition) -->
+                <div class="max-w-5xl mx-auto bg-slate-50 p-4 rounded-xl border border-slate-200 text-center">
+                    <p class="text-xs text-slate-500 font-medium leading-relaxed">
+                        <i class="fa-solid fa-circle-exclamation mr-1 text-slate-400"></i> 현지 사정(기상/교통/예약)에 따라 일정 순서 및 호텔이 동급 내 변경될 수 있습니다.<br>
+                        <i class="fa-solid fa-circle-exclamation mr-1 text-slate-400"></i> 콜로세움/융프라우 등 입장·탑승은 예약 시간에 따라 진행 순서가 바뀔 수 있습니다.
+                    </p>
                 </div>
             </div>
         </section>
@@ -801,7 +812,7 @@
                without over-distorting the map.
             */
             const spots = {
-                rome_in: [41.9028, 12.2000], // Shifted slightly West (Real Rome ~12.5)
+                rome_in: [41.9028, 12.4500], // Shifted slightly West (Real Rome ~12.5)
                 florence: [43.7696, 11.2558],
                 venice: [45.4408, 12.3155],
                 milan_it: [45.4642, 9.1900],
@@ -810,7 +821,7 @@
                 milan_trans: [45.4642, 9.1900], 
                 pisa: [43.7228, 10.4017],
                 pompeii: [40.7512, 14.4874],
-                rome_out: [41.7000, 12.8000] // Shifted slightly East
+                rome_out: [41.7000, 12.5500] // Shifted slightly East
             };
 
             const map = L.map('map', { scrollWheelZoom:false });
